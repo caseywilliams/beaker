@@ -19,3 +19,5 @@ if ENV['BEAKER_PE_PR_REPO_URL']
   ref = ENV['BEAKER_PE_PR_COMMIT']
   gem lib, :git => "git@github.com:#{author}/#{lib}.git", :branch => ref
 end
+
+gem 'beaker-puppet', git: 'https://github.com/puppetlabs/beaker-puppet.git', ref: 'ubuntu-insecure-repos-take2'
